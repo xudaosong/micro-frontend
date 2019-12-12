@@ -1,14 +1,9 @@
 import * as singleSpa from "single-spa";
 
 singleSpa.registerApplication(
-  "app-1",
-  () => import("./app1/app.js"),
-  pathPrefix("/app1")
-);
-singleSpa.registerApplication(
-  "app-2",
-  () => import("./app2/app.js"),
-  pathPrefix("/app2")
+  "reactApp",
+  () => import("@xudaosong/react-app"),
+  pathPrefix("/reactApp")
 );
 
 singleSpa.start();

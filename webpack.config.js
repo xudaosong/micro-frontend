@@ -5,7 +5,7 @@ const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin')
 
 module.exports = {
   entry: {
-    'root-application': 'src/root-application.js',
+    'bootstrap': 'src/bootstrap.js',
     'common-dependencies': [
       // We want just one version of angular, so we put it into the common dependencies
       // 'core-js/client/shim.min.js',
